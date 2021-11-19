@@ -1,0 +1,5 @@
+ # workflow triggers
+on:
+  repository_dispatch:
+    types:
+      - webhook
