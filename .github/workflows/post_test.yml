@@ -19,7 +19,7 @@ jobs:
     steps:
     - run: |
         sudo apt-get update
-        sudo apt-get install binfmt-support qemu-user-static
+        sudo apt-get install binfmt-support qemu-user-static python-dbus u-boot-tools python-debian uboot-mkimage python-apt python-support
         git clone https://github.com/rockchip-linux/rk-rootfs-build
         cd rk-rootfs-build
         sudo dpkg -i ubuntu-build-service/packages/*
