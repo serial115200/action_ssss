@@ -18,7 +18,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
+        sudo update
         sudo apt-get install binfmt-support qemu-user-static
-        git clone https://github.com/rockchip-linux/rk-rootfs-build
-        cd rk-rootfs-build && dpkg -i ubuntu-build-service/packages/* && apt-get install -f
-        cd rk-rootfs-build && RELEASE=buster TARGET=desktop ARCH=arm64 ./mk-base-debian.sh
