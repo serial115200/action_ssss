@@ -15,7 +15,7 @@ on:
 
 jobs:
   say_hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - run: |
         sudo apt-get update
